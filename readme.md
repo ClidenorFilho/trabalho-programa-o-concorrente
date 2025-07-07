@@ -109,38 +109,6 @@ O uso de semáforos aborda efetivamente vários problemas comuns de concorrênci
 
 -----
 
-## Compilando e Executando
-
-Para compilar e executar o programa:
-
-1.  **Compilar:**
-
-    ```bash
-    gcc -o producer_consumer main.c produtor.c consumidor.c -pthread -std=c99
-    ```
-
-      * `-o producer_consumer`: Especifica o nome do executável de saída.
-      * `main.c produtor.c consumidor.c`: Inclui todos os arquivos fonte.
-      * `-pthread`: Linka com a biblioteca de threads POSIX.
-      * `-std=c99`: Garante a conformidade com o padrão C99.
-
-2.  **Executar:**
-
-    ```bash
-    ./producer_consumer <num_produtores> <num_consumidores>
-    ```
-
-      * `<num_produtores>`: Número de threads produtoras (ex: 5).
-      * `<num_consumidores>`: Número de threads consumidoras (ex: 5).
-
-    **Exemplo:**
-
-    ```bash
-    ./producer_consumer 5 5
-    ```
-
------
-
 ## Estrutura do Projeto
 
   * **`buffer.h`**: Arquivo de cabeçalho contendo as definições globais para a estrutura do buffer circular, variáveis globais, declarações de semáforos e protótipos de funções.
