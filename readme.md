@@ -109,34 +109,33 @@ O uso de semáforos aborda efetivamente vários problemas comuns de concorrênci
 
 -----
 
-🛠️ Como compilar e executar
+# 🛠️ Como compilar e executar
 Depois de clonar ou copiar o projeto para sua máquina, siga estes passos:
 
-bash
-Copiar
-Editar
-# 1️⃣ Remover arquivos objetos e o executável gerado anteriormente:
-make clean
 
-# 2️⃣ Compilar todo o projeto (gera os .o e o executável 'trabalho'):
-make
+1️⃣ Remover arquivos objetos e o executável gerado anteriormente:
 
-# 3️⃣ Executar o programa, informando o número de produtores e consumidores:
-./trabalho <num_produtores> <num_consumidores>
-Exemplo:
-bash
-Copiar
-Editar
-make clean
-make
-./trabalho 5 3
-Isso irá:
+    make clean
 
-Limpar artefatos antigos com make clean.
+2️⃣ Compilar todo o projeto (gera os .o e o executável 'trabalho'):
 
-Compilar todos os componentes com make.
+    make
 
-Executar o programa com 5 threads produtoras e 3 consumidoras.
+3️⃣ Executar o programa, informando o número de produtores e consumidores:
+
+    ./trabalho <num_produtores> <num_consumidores>
+    Exemplo:
+
+    make clean
+    make
+    ./trabalho 5 3
+    Isso irá:
+
+    Limpar artefatos antigos com make clean.
+
+    Compilar todos os componentes com make.
+
+    Executar o programa com 5 threads produtoras e 3 consumidoras.
 
 ----
 
