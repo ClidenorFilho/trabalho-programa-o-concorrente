@@ -32,3 +32,4 @@ void *producer_thread(void *arg)  {
     printf("Produtor %d finalizado. Total de itens produzidos: %d\n", producer_id, NUM_ITEMS_POR_PRODUTOR);
     pthread_exit(NULL); // Termina a thread do produtor
 }
+ 

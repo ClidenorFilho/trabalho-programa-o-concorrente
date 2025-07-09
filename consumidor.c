@@ -42,4 +42,4 @@ void *consumer_thread(void *args) {
 
     printf("Consumidor %d finalizado (sentinela recebida).\n", consumer_id);
     pthread_exit(NULL); // Termina a thread do consumidor   
-}
+} 

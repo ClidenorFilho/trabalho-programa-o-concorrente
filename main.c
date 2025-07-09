@@ -14,9 +14,9 @@ int num_producers_global = NUM_PRODUTORES;
 int num_consumers_global = NUM_CONSUMIDORES; 
 
 // Mecanismo de Sincronização (semaforos)
-sem_t sem_empty_slots; 
-sem_t sem_full_slots;  
-sem_t sem_buffer_access; 
+sem_t sem_empty_slots; //contagem de espaços disponíveis, iniciado com BUFFER_SIZE
+sem_t sem_full_slots;  // contagem de espaços ocupados, iniciado com 0
+sem_t sem_buffer_access; // semáforo binário para acesso exclusivo ao buffer (usado como mutex)
 
 // Implementação das funções do buffer
 void buffer_init() {
@@ -126,3 +126,4 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+ 

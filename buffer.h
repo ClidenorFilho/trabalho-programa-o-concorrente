@@ -9,7 +9,7 @@
 #define BUFFER_SIZE 10 // capacidade maxima do buffer circular
 #define NUM_ITEMS_POR_PRODUTOR 50 // número de itens que cada produtor ira inserir
 #define NUM_PRODUTORES 5
-#define NUM_CONSUMIDORES 5
+#define NUM_CONSUMIDORES 5 
 
 // Estrutura do Buffer circular
 typedef struct {
